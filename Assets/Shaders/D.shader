@@ -1,16 +1,15 @@
-Shader "Custom/L"
+Shader "Custom/D"
 {
     Properties
     {
         _MainTex("Albedo (RGB)", 2D) = "white" {}
         _StripeWidth("Largura das listras", Range(0.01, 0.3)) = 0.2
     }
-        SubShader
+    SubShader
     {
         CGPROGRAM
         #pragma surface surf Standard fullforwardshadows
         sampler2D _MainTex;
-        float _Radius;
         float _StripeWidth;
         struct Input
         {
@@ -18,19 +17,18 @@ Shader "Custom/L"
         };
         void surf(Input IN, inout SurfaceOutputStandard o)
         {
-            // Calcula o centro da textura
-            float2 centeredUV = IN.uv_MainTex - 0.5;
+            float x = IN.uv_MainTex.x;
+            float y = IN.uv_MainTex.y;
 
-            // Calcula a distância do centro
-            float distance = length(centeredUV);
+            float diagonal = frac((x - y) / _StripeWidth);
 
-            // Calcula se 
-            float stripes = frac(distance / _StripeWidth) > 0.3 ? 0 : 1;
+            // Cria as listras diagonais
+            float stripes = diagonal > 0.5 ? 1.0 : 0.0;
 
             o.Albedo = stripes;
         }
         ENDCG
     }
-        FallBack "Diffuse"
+    FallBack "Diffuse"
 }
 
