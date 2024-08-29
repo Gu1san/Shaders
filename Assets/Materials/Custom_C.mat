@@ -7,8 +7,8 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Custom_B
-  m_Shader: {fileID: 4800000, guid: d0c59eee3c1e7f44696cf8d9c5eab8ae, type: 3}
+  m_Name: Custom_C
+  m_Shader: {fileID: 4800000, guid: 724feb60a7acee84c994d84346b165c5, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
   m_ValidKeywords: []
@@ -28,11 +28,8 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Ints: []
-    m_Floats:
-    - _Glossiness: 0.5
-    - _Metallic: 0
+    m_Floats: []
     m_Colors:
-    - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _Color1: {r: 1, g: 0, b: 0, a: 1}
     - _Color2: {r: 0, g: 0, b: 1, a: 1}
   m_BuildTextureStacks: []
