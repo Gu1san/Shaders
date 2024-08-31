@@ -29,7 +29,9 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
-    - _Radius: 0.086
+    - _CenterStrength: 0.39
+    - _Radius: 0.365
+    - _Smoothness: 0.61
     - _StripeWidth: 0.2
     m_Colors: []
   m_BuildTextureStacks: []

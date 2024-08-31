@@ -33,6 +33,6 @@ Material:
     - _B: 2.8
     - _C: 1
     - _D: 0.6
-    - _StripeWidth: 0.2
+    - _StripeWidth: 0.086
     m_Colors: []
   m_BuildTextureStacks: []
