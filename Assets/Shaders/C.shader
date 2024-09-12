@@ -22,12 +22,18 @@ Shader "Custom/C"
             float x = IN.uv_MainTex.x;
             float y = IN.uv_MainTex.y;
 
-            //gerando uma diagonal com os valores absolutos de X e Y
-            float a = abs(y / x);
-            float b = abs(x - y);
+            //Diagonal descendo
+            float a = saturate(1 - (x + y));
 
-            o.Albedo = a + b;
-            //o.Albedo = lerp(_Color1.rgb, _Color2.rgb, a);
+            //Diagonal subindo
+            float b = saturate((y - x));
+
+            //Multiplicando as cores
+            float3 c = a * _Color1;
+            float3 d = b * _Color2;
+
+            //Somando as duas diagonais e trocando o preto por branco
+            o.Albedo = (c + d) + (1 - (a + b));
         }
         ENDCG
     }
