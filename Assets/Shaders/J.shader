@@ -22,10 +22,10 @@ Shader "Custom/J"
         void surf(Input IN, inout SurfaceOutputStandard o)
         {
             // Calcula o centro da textura
-            float2 centeredUV = IN.uv_MainTex - 0.5;
+            float2 center = IN.uv_MainTex - 0.5;
 
             // Calcula a distância do centro
-            float distance = length(centeredUV);
+            float distance = length(center);
 
             // Pintando de preto tudo que estiver dentro da circunferência
             float circle = step(distance, _Radius);
