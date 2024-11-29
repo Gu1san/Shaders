@@ -7,8 +7,8 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Custom_Xadrez
-  m_Shader: {fileID: 4800000, guid: c1a5a581f8ad213459d713ec38b16838, type: 3}
+  m_Name: Hidden_Efeito
+  m_Shader: {fileID: 4800000, guid: b30aab5afd11a8e47984e6b0e2986bda, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
   m_ValidKeywords: []
@@ -23,18 +23,24 @@ Material:
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs:
+    - _Blend:
+        m_Texture: {fileID: 2800000, guid: 99587307b537ef548936c57efc3f8f4d, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _BlendTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - _MainTex:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
-    - _Glossiness: 0.5
-    - _Metallic: 0
-    - _Size: 10
-    - _Speed: 1
-    m_Colors:
-    - _Color: {r: 1, g: 1, b: 1, a: 1}
-    - _Color1: {r: 1, g: 0, b: 0, a: 1}
-    - _Color2: {r: 0, g: 0, b: 1, a: 1}
+    - _B: 1
+    - _G: 1
+    - _Opacity: 1
+    - _R: 1
+    - _Slider: 0
+    m_Colors: []
   m_BuildTextureStacks: []

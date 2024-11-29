@@ -7,8 +7,8 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Custom_Xadrez
-  m_Shader: {fileID: 4800000, guid: c1a5a581f8ad213459d713ec38b16838, type: 3}
+  m_Name: Custom_E
+  m_Shader: {fileID: 4800000, guid: 6072e57562cb053439c722223baba268, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
   m_ValidKeywords: []
@@ -30,11 +30,10 @@ Material:
     m_Ints: []
     m_Floats:
     - _Glossiness: 0.5
+    - _InnerRadius: 0
     - _Metallic: 0
-    - _Size: 10
-    - _Speed: 1
+    - _OuterRadius: 0
+    - _Smoothness: 0
     m_Colors:
     - _Color: {r: 1, g: 1, b: 1, a: 1}
-    - _Color1: {r: 1, g: 0, b: 0, a: 1}
-    - _Color2: {r: 0, g: 0, b: 1, a: 1}
   m_BuildTextureStacks: []
