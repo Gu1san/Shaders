@@ -14,7 +14,9 @@ public class CameraEffect : MonoBehaviour
     [Range(0, 1.0f)]
     public float opacity = 1.0f;
     Material mat;
-    public Texture2D tex;
+    public Texture2D frameTex;
+    public Texture2D aimTex;
+    public Texture2D grainyTex;
     void OnEnable()
     {
         if(mat == null)
@@ -31,7 +33,9 @@ public class CameraEffect : MonoBehaviour
             mat.SetFloat("_G", green);
             mat.SetFloat("_B", blue);
             mat.SetFloat("_Opacity", opacity);
-            mat.SetTexture("_BlendTex", tex);
+            mat.SetTexture("_FrameTex", frameTex);
+            mat.SetTexture("_AimTex", aimTex);
+            mat.SetTexture("_GrainyTex", grainyTex);
             Graphics.Blit(source, destination, mat);
         } else {
             Graphics.Blit(source, destination);

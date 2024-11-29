@@ -680,6 +680,7 @@ GameObject:
   - component: {fileID: 963194226}
   - component: {fileID: 963194229}
   - component: {fileID: 963194230}
+  - component: {fileID: 963194231}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -834,11 +835,26 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   curShader: {fileID: 4800000, guid: b30aab5afd11a8e47984e6b0e2986bda, type: 3}
-  red: 0
-  green: 1
-  blue: 1
+  red: 0.213
+  green: 0.715
+  blue: 0.072
   opacity: 1
-  tex: {fileID: 2800000, guid: aa81a593819d36443a54e2135d9063ad, type: 3}
+  frameTex: {fileID: 2800000, guid: aa81a593819d36443a54e2135d9063ad, type: 3}
+  aimTex: {fileID: 0}
+  grainyTex: {fileID: 2800000, guid: 99587307b537ef548936c57efc3f8f4d, type: 3}
+--- !u!114 &963194231
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 963194225}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 146ba8aefd0702d448e56d36d965c107, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cameraEffect: {fileID: 963194230}
 --- !u!1 &1142418351
 GameObject:
   m_ObjectHideFlags: 0
