@@ -13,6 +13,9 @@ public class CameraEffect : MonoBehaviour
     public float blue = 1.0f;
     [Range(0, 1.0f)]
     public float opacity = 1.0f;
+    [Range(0.01f, 1.0f)]
+    public float grainyStep = .2f;
+    public Vector4 aimScale;
     Material mat;
     public Texture2D frameTex;
     public Texture2D aimTex;
@@ -33,6 +36,8 @@ public class CameraEffect : MonoBehaviour
             mat.SetFloat("_G", green);
             mat.SetFloat("_B", blue);
             mat.SetFloat("_Opacity", opacity);
+            mat.SetFloat("_GrainyStep", grainyStep);
+            mat.SetVector("_AimScale", aimScale);
             mat.SetTexture("_FrameTex", frameTex);
             mat.SetTexture("_AimTex", aimTex);
             mat.SetTexture("_GrainyTex", grainyTex);

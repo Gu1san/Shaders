@@ -839,8 +839,10 @@ MonoBehaviour:
   green: 0.715
   blue: 0.072
   opacity: 1
+  grainyStep: 0.139
+  aimScale: {x: 1.63, y: 1, z: 0, w: 0}
   frameTex: {fileID: 2800000, guid: aa81a593819d36443a54e2135d9063ad, type: 3}
-  aimTex: {fileID: 0}
+  aimTex: {fileID: 2800000, guid: 58f69d62b0529d84d9cb1841c2c2f492, type: 3}
   grainyTex: {fileID: 2800000, guid: 99587307b537ef548936c57efc3f8f4d, type: 3}
 --- !u!114 &963194231
 MonoBehaviour:
