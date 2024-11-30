@@ -13,6 +13,8 @@ public class CameraEffect : MonoBehaviour
     public float blue = 1.0f;
     [Range(0, 1.0f)]
     public float opacity = 1.0f;
+    [Range(0,225)]
+    public float StencilRef = 1.0f;
     Material mat;
     public Texture2D tex;
     void OnEnable()
@@ -30,6 +32,7 @@ public class CameraEffect : MonoBehaviour
             mat.SetFloat("_R", red);
             mat.SetFloat("_G", green);
             mat.SetFloat("_B", blue);
+            mat.SetFloat("_StencilRef", StencilRef);
             mat.SetFloat("_Opacity", opacity);
             mat.SetTexture("_BlendTex", tex);
             Graphics.Blit(source, destination, mat);
